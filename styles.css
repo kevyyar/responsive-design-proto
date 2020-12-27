@@ -31,7 +31,7 @@ h1,h2,h3,h4 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.4em;
 }
 
 h2 {
@@ -78,24 +78,339 @@ textarea {
   outline: none;
 }
 
+/*  ------------------ HEADER STYLES */
+header {
+  background-color: #202d56e8;
+  padding: 20px;
+}
+
 
 /* CALL TO ACTION STYLES*/
+.call-to-action {
+  background: var(--pastelWhite)
+}
 
 
-
-/* MEDIA QUERIES */
+/* ------------------- MEDIA QUERIES */
 
 /* CELLPHONE STYLES */
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 360px) {
   body {
     font-size: 20px;
   }
+
+  nav {
+    text-align: center;
+  }
+
+  /* HEADER RESPONSIVE */
+  .nav-links {
+    display: none;
+  }
+
+  /* CALL TO ACTION RESPONSIVE */
+  .cta-left {
+    text-align: center;
+    padding: 25px;
+  }
+
+  .cta-title h1 {
+    margin: 0 0 25px;
+  }
+
+  .cta-features {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .cta-features li {
+    margin-bottom: 10px;
+  }
+
+  .cta-right {
+    margin-bottom: 100px;
+  }
+
+  .cta-right img {
+    width: 100%;
+  }
+
+  /* HOW WE TEACH RESPONSIVE */
+  .how-we-teach-title {
+    text-align: center;
+  }
+
+  .how-we-teach p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .how-we-teach img {
+    width: 100%;
+  }
+
+  .container-details {
+    padding: 25px;
+  }
+
+  /* IMAGE SLIDER RESPONSIVE */
+  .slider {
+    display: none;
+  }
+
+  /* ABOUT-US RESPONSIVE */
+  .about-us {
+    padding: 25px;
+    background: rgb(224,251,252);
+    background: linear-gradient(95deg, rgba(224,251,252,1) 0%, rgba(194,223,227,1) 46%, rgba(157,180,192,1) 100%);
+  }
+
+  .about-description h2 {
+    text-align: center;
+  }
+
+  .about-description p{
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+
+  /* METHODOLOGY RESPONSIVE */
+  .methodology {
+    padding: 25px;
+  }
+
+  .methodology h2 {
+    text-align: center;
+  }
+
+  .method {
+    background-color: var(--lightOrange);
+    padding: 25px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0,0,0,.6);
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .method h3 {
+    letter-spacing: 2px;
+  }
+
+  .method p {
+    font-size: 14px;
+  }
+
+  i {
+    font-size: 6rem;
+  }
+
+  /* CONTACT RESPONSIVE */
+  footer {
+    background-color: var(--lightWhite);
+    padding: 25px;
+  }
+
+  footer h2 {
+    text-align: center;
+  }
+
+  footer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer input,
+  footer textarea {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .footer-social {
+    background-color: var(--logoColor);
+    color: var(--white);
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .footer-social i {
+    font-size: 3rem;
+    color: var(--white);
+  }
+
 }
 
 /* LARGE TABLETS & LAPTOP STYLES */
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 760px) {
   body {
     font-size: 40px;
+  }
+  
+  /* HEADER RESPONSIVE */
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: block;
+  }
+
+  .nav-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .nav-links ul li a{
+    color: var(--white);
+    margin-right: 20px;
+  }
+
+  /* CALL TO ACTION RESPONSIVE */
+  .call-to-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cta-title h1 {
+    margin: 0 0 25px;
+    font-size: 3rem;
+  }
+
+  .cta-subtitle {
+    font-size: 16px;
+  }
+
+  .cta-right {
+    padding-top: 80px;
+  }
+
+  .cta-right img {
+    max-width: 100%;
+  }
+
+  /* HOW WE TEACH RESPONSIVE */
+  .group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .how-we-teach p {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .how-we-teach img {
+    width: 100%;
+  }
+
+  .container-details {
+    padding: 25px;
+  }
+
+  /* IMAGE SLIDER RESPONSIVE */
+  .slider {
+    display: none;
+  }
+
+  /* ABOUT-US RESPONSIVE */
+  .about-us {
+    padding: 25px;
+    background: rgb(224,251,252);
+    background: linear-gradient(95deg, rgba(224,251,252,1) 0%, rgba(194,223,227,1) 46%, rgba(157,180,192,1) 100%);
+  }
+
+  .about-description h2 {
+    text-align: center;
+  }
+
+  .about-description p{
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  .about-image img {
+    width: 100%;
+  }
+
+  /* METHODOLOGY RESPONSIVE */
+  .methodology {
+    padding: 25px;
+  }
+
+  .methodology h2 {
+    text-align: center;
+  }
+
+  .method {
+    background-color: var(--lightOrange);
+    padding: 25px;
+    text-align: center;
+    box-shadow: 1px 2px 3px rgba(0,0,0,.6);
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+
+  .method h3 {
+    letter-spacing: 2px;
+  }
+
+  .method p {
+    font-size: 14px;
+  }
+
+  i {
+    font-size: 6rem;
+  }
+
+  /* CONTACT RESPONSIVE */
+  footer {
+    background-color: var(--lightWhite);
+    padding: 25px;
+  }
+
+  footer h2 {
+    text-align: center;
+  }
+
+  footer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer input,
+  footer textarea {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .footer-social {
+    background-color: var(--logoColor);
+    color: var(--white);
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .footer-social i {
+    font-size: 3rem;
+    color: var(--white);
   }
 
 }
