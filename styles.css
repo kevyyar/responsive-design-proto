@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+/* VARIABLES */
+:root {
+  --black: #000;
+  --white: #fff;
+  --lightBlack: #3c3c3c;
+  --pastelWhite: #ededed;
+  --lightOrange: #eea600;
+  --darkOrange: #ff8811;
+  --lightWhite: #fff8f0;
+  --logoColor: #202d56;
+}
+
+/* RESET STYLES */
+body, p, a, ul, li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: var(--pastelWhite);
+  overflow-x: hidden;
+}
+
+button {
+  background-color: var(--darkOrange);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--black);
+  border-radius: 20px;
+  text-transform: uppercase;
+  padding: 6px 12px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+/* CELLPHONE STYLES */
+@media screen and (min-width: 620px) {
+  
+}
+
+/* LARGE TABLETS & LAPTOP STYLES */
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
+
+}
+/* DESKTOP STYLES */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 50px;
+  }
+}
