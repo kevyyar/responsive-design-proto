@@ -18,11 +18,28 @@ body, p, a, ul, li {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 li {
   list-style-type: none;
+}
 
+h1,h2,h3,h4 {
+  font-family: 'Bangers', sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 body {
@@ -31,8 +48,8 @@ body {
   overflow-x: hidden;
 }
 
-button {
-  background-color: var(--darkOrange);
+.button {
+  background-color: var(--lightOrange);
   border: none;
   outline: none;
   cursor: pointer;
@@ -40,8 +57,29 @@ button {
   border-radius: 20px;
   text-transform: uppercase;
   padding: 6px 12px;
+  font-weight: 700;
+  box-shadow: 1px 2px 3px rgba(0,0,0,.6);
+  display: inline-block;
+  transition: all .3s ease-in-out;
 }
 
+.button:hover {
+  color: #222;
+  background-color: var(--darkOrange);
+}
+
+input,
+textarea {
+  background-color: rgba(255,255,255,.05);
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 2px solid #9893d8;
+  color: var(--lightBlack);
+  outline: none;
+}
+
+
+/* CALL TO ACTION STYLES*/
 
 
 
@@ -49,19 +87,21 @@ button {
 
 /* CELLPHONE STYLES */
 @media screen and (min-width: 620px) {
-  
+  body {
+    font-size: 20px;
+  }
 }
 
 /* LARGE TABLETS & LAPTOP STYLES */
 @media screen and (min-width: 960px) {
   body {
-    font-size: 18px;
+    font-size: 40px;
   }
 
 }
 /* DESKTOP STYLES */
 @media screen and (min-width: 1200px) {
   body {
-    font-size: 50px;
+    font-size: 60px;
   }
 }
