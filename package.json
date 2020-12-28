@@ -1,0 +1,27 @@
+{
+  "name": "responsive-design-proto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scroll.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevyyar/responsive-design-proto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevyyar/responsive-design-proto/issues"
+  },
+  "homepage": "https://github.com/kevyyar/responsive-design-proto#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.17"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
