@@ -27,15 +27,14 @@ li {
 
 h1,h2,h3,h4 {
   font-family: 'Bangers', sans-serif;
-  font-weight: 700;
 }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 2.7em;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 h3 {
@@ -87,7 +86,7 @@ header {
 
 /* CALL TO ACTION STYLES*/
 .call-to-action {
-  background: var(--pastelWhite)
+  background: var(--lightWhite)
 }
 
 
@@ -136,17 +135,26 @@ header {
   }
 
   /* HOW WE TEACH RESPONSIVE */
+  .how-we-teach {
+    background-color: #EFE9F4;
+    padding-top: 25px;
+  }
   .how-we-teach-title {
     text-align: center;
   }
 
   .how-we-teach p {
     font-size: 14px;
-    margin-bottom: 30px;
+    /*margin-bottom: 20px;*/
   }
 
   .how-we-teach img {
     width: 100%;
+    border-radius: 25px;
+  }
+
+  .how-we-teach .group {
+    padding: 20px;
   }
 
   .container-details {
@@ -174,8 +182,12 @@ header {
     margin-bottom: 30px;
   }
 
+  .about-image {
+    text-align: center;
+  }
+
   .about-image img {
-    width: 100%;
+    width: 50%;
   }
 
   /* METHODOLOGY RESPONSIVE */
@@ -205,17 +217,17 @@ header {
   }
 
   i {
-    font-size: 6rem;
+    font-size: 4rem;
   }
 
   /* CONTACT RESPONSIVE */
   footer {
     background-color: var(--lightWhite);
-    padding: 25px;
   }
 
   footer h2 {
     text-align: center;
+    padding-top: 25px;
   }
 
   footer form {
@@ -232,7 +244,7 @@ header {
   }
 
   .footer-social {
-    background-color: var(--logoColor);
+    background-color: #202d56e8;
     color: var(--white);
     padding: 20px;
     display: flex;
@@ -247,7 +259,7 @@ header {
 
 }
 
-/* LARGE TABLETS & LAPTOP STYLES */
+/* ------------------------- LARGE TABLETS & LAPTOP STYLES */
 @media screen and (min-width: 760px) {
   body {
     font-size: 40px;
@@ -286,7 +298,7 @@ header {
 
   .cta-title h1 {
     margin: 0 0 25px;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .cta-subtitle {
@@ -298,14 +310,37 @@ header {
   }
 
   .cta-right img {
-    max-width: 100%;
+    max-width: 90%;
+  }
+
+
+  /* IMAGE SLIDER RESPONSIVE */
+  .slider {
+    display: none;
   }
 
   /* HOW WE TEACH RESPONSIVE */
-  .group {
+
+  .how-we-teach h2 {
+    font-size: 2.8rem;
+  }
+
+  .how-we-teach h3 {
+    font-size: 2rem;
+  }
+
+  .how-we-teach .group {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .how-we-teach .group img {
+    width: 50%;
+  }
+
+  .how-we-teach .group:nth-child(even) img {
+    order: 2;
   }
 
   .how-we-teach p {
@@ -328,22 +363,24 @@ header {
 
   /* ABOUT-US RESPONSIVE */
   .about-us {
-    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
     background: rgb(224,251,252);
     background: linear-gradient(95deg, rgba(224,251,252,1) 0%, rgba(194,223,227,1) 46%, rgba(157,180,192,1) 100%);
   }
 
-  .about-description h2 {
-    text-align: center;
+  .about-us h2 {
+    font-size: 2.8rem;
   }
 
-  .about-description p{
-    font-size: 14px;
-    margin-bottom: 30px;
+  .about-description {
+    width: 95%;
   }
 
   .about-image img {
-    width: 100%;
+    width: 80%;
   }
 
   /* METHODOLOGY RESPONSIVE */
@@ -352,71 +389,210 @@ header {
   }
 
   .methodology h2 {
-    text-align: center;
-  }
-
-  .method {
-    background-color: var(--lightOrange);
-    padding: 25px;
-    text-align: center;
-    box-shadow: 1px 2px 3px rgba(0,0,0,.6);
-    border-radius: 20px;
-    margin-bottom: 20px;
+    font-size: 2.8rem;
   }
 
   .method h3 {
-    letter-spacing: 2px;
+    font-size: 2rem;
   }
 
-  .method p {
-    font-size: 14px;
+  .methodology-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
   }
 
   i {
-    font-size: 6rem;
+    font-size: 3.5rem;
   }
 
   /* CONTACT RESPONSIVE */
-  footer {
-    background-color: var(--lightWhite);
-    padding: 25px;
-  }
-
   footer h2 {
-    text-align: center;
+    font-size: 2.8rem;
   }
-
-  footer form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  footer input,
-  footer textarea {
-    margin-bottom: 15px;
-    font-size: 14px;
-  }
-
-  .footer-social {
-    background-color: var(--logoColor);
-    color: var(--white);
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .footer-social i {
-    font-size: 3rem;
-    color: var(--white);
-  }
-
 }
-/* DESKTOP STYLES */
+/*  ------------------DESKTOP STYLES */
 @media screen and (min-width: 1200px) {
   body {
     font-size: 60px;
   }
+
+  /* HEADER RESPONSIVE */
+  header {
+    padding: 25px 40px;
+  }
+
+  .nav-links ul li a{
+    margin-right: 40px;
+    font-size: 1.4rem;
+  }
+
+  /* CALL TO ACTION RESPONSIVE */
+
+  .call-to-action {
+    position: relative;
+    overflow: hidden;
+    padding: 40px 60px;
+  }
+
+  .stripes {
+    transform: skewY(-12deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .stripe-one{
+    background-color: #30c5ff;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 230px;
+    left: 0;
+  }
+
+  .stripe-two{
+    background-color: #e1e289;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 310px;
+    left: 0;
+  }
+
+  .stripe-three{
+    background-color: #820933;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 390px;
+    left: 0;
+  }
+
+  .cta-left {
+    padding: 40px;
+    z-index: 999;
+    background: var(--lightWhite);
+    border-radius: 25px;
+  }
+
+  .cta-title h1 {
+    font-size: 6.5rem;
+    text-shadow: 5px 2px 2px var(--lightOrange);
+  }
+
+  .cta-subtitle h2 {
+    font-size: 2rem;
+  }
+
+  .cta-subtitle button {
+    font-size: 1.5rem;
+  }
+
+  .cta-right {
+    z-index: 999;
+  }
+
+  .cta-right img {
+    border-radius: 40px;
+  }
+
+  /* HOW WE TEACH RESPONSIVE */
+  .how-we-teach {
+    /*height: 100vh;*/
+  }
+
+  .how-we-teach h2 {
+    font-size: 4rem;
+  }
+
+  .teaching-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 60px 40px;
+    grid-gap: 40px;
+  }
+
+  .group {
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,.18);
+  }
+
+  .group img {
+    width: 100%;
+    display: block;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+
+  /* SLIDER RESPONSIVE */
+  .slider {
+    display: block;
+    padding: 40px 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slides {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slides input {
+    display: none;
+  }
+
+  .slide {
+    transition: 2s;
+  }
+
+  .manual-btn:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  #radio1:checked ~ .first {
+    margin-left: 150%;
+  }
+
+  #radio2:checked ~ .first {
+    margin-left: 0;
+  }
+
+  #radio3:checked ~ .first {
+    margin-left: -150%;
+  }
+
+
+  /* ABOUT-US RESPONSIVE */
+  .about-us {
+    padding: 60px;
+  }
+
+  .about-description {
+    background-color: var(--lightWhite);
+    box-shadow: 0 0 30px rgba(0,0,0,.18);
+    width: 50%;
+    padding: 40px;
+    border-radius: 25px;
+  }
+
+  .about-description h2 {
+    font-size: 4rem;
+  }
+
+  .about-image img {
+    width: 50%;
+  }
+
+  /* METHODOLOGY RESPONSIVE */
+
+
+  /* CONTACT RESPONSIVE */
+
+
 }
