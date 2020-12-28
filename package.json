@@ -1,7 +1,6 @@
 {
   "name": "responsive-design-proto",
   "version": "1.0.0",
-  "description": "",
   "main": "scroll.js",
   "scripts": {
     "dev": "nodemon src/index.js"
@@ -23,5 +22,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
-  }
+  },
+  "description": ""
 }
